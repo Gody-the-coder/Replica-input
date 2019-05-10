@@ -1,0 +1,112 @@
+/* variables CSS */
+:root{
+    --tealFonce: rgba(9, 95, 91, 0.7);
+    --tealPal: rgb(31, 142, 150);
+    --roseFonce: rgb(179, 67, 85);
+    --Blan: rgb(255, 255, 255);
+}
+
+/* reset tout configuration de baz CSS pag web la */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* proprietes general */
+
+html, body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background: url('./img/pexels-photo-1509428.jpeg') no-repeat center center/cover;
+    line-height: 1.5;
+}
+
+/* form-container */
+.form-container{
+    margin: 20px auto;
+    max-width: 500px;
+    background: var(--tealFonce);
+    padding: 1rem;
+    color: var(--Blan);
+    border-radius: 0 100px 0 100px;
+}
+
+.form-container label{
+    display: block;
+}
+
+.form-container input{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--tealPal);
+    border-radius: 5px;
+}
+
+.form-container input:focus{
+    outline: none;
+    border: 1px solid var(--tealPal);
+
+}
+
+.form-container h2{
+    font-size: 2rem;
+}
+
+.form-container label{
+    font-size: 1.2rem;
+}
+
+/* Feedback container */
+
+.feedback-container{
+    width: 70%;
+    margin: 15px auto;
+    background: var(--Blan);
+    color: var(--roseFonce);
+    padding: 1rem;
+    border-radius: 0 50px 0 50px;
+}
+
+.feedback-container input{
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: var(--roseFonce);
+}
+
+.feedback-container h2{
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.form-container button{
+    width: 90%;
+    padding: 0.5rem;
+    color: var(--Blan);
+    background: var(--roseFonce);
+    border: none;
+    border-radius: 0 30px 0 30px;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* hover state */
+.form-container button:hover{
+    background: var(--Blan);
+    color: var(--roseFonce);
+}
+
+/* sou mobile */
+
+@media(max-width: 500px){
+    .container{
+        padding: 1rem;
+    }
+
+    .feedback-container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Replica input</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Vos Informations</h2>
+        <form>
+            <div>
+                <label for="">Nom complet</label>
+                <input id="nom" type="text" value="" oninput="nomReplica.value = nom.value">
+            </div>
+            <div>
+                <label for="">Telephone</label>
+                <input id="telephone" type="number" value="" oninput="telephoneReplica.value = telephone.value">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input id="email" type="email" value="" oninput="emailReplica.value = email.value">
+            </div>
+            <div>
+                <label for="">Address</label>
+                <input id="address" type="text" value="" oninput="addressReplica.value = address.value">
+            </div>
+            <!-- Feedback container -->
+            <div class="feedback-container">
+                <h2>Informations</h2>
+                <input id="nomReplica" type="text" value="" disabled>
+                <input id="telephoneReplica" type="number" value="" disabled>
+                <input id="emailReplica" type="email" value="" disabled>
+                <input id="addressReplica" type="text" value="" disabled>
+            </div>
+            <!-- feedback-container termine la -->
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
